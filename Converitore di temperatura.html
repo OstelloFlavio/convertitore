@@ -11,12 +11,13 @@
         function C()
         { 
             var value = document.getElementById('numero').value; 
-            alert(value); 
+            alert("La temperatura calcolata in gradi Celsius e': " +value);
         }
         function F()
         { 
-            var value = document.getElementById('numero').value; 
-            alert(value); 
+            var value = document.getElementById('numero').value;
+            value = (value * 9/5) + 32;
+            alert("La temperatura calcolata in gradi Fahrenheit e': " +value); 
         } 
     </script> 
 </head>
@@ -29,6 +30,5 @@
     <input onClick="F()" type="button" value="Converti in F" name="B2" style="background-color:#252850" style="color:#FFFFFF" SIZE="30">
     <input type="reset" value="Reset" name="B3" style="background-color:#ff0000" style="color:#FFFFFF" SIZE="30">
     </td>
-    <!-- <p><font size="6">La temperatura calcolata e': 20</font><br/></p> -->
 </body>
 </html>
